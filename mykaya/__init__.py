@@ -1,9 +1,12 @@
+from tabnanny import check
+
+
 def value_check(value):
     if value < 0:
         raise ValueError("Sorry, no numbers below zero")
 
 
-def my_kaya_equation(pop, gdp, enInt, carbInt):
+def my_kaya_equation(pop, gdp, enInt, carbInt, output_type="CO2"):
     """
     Input Example for my_kaya_equation
     • pop (mio): 82.4
@@ -17,4 +20,10 @@ def my_kaya_equation(pop, gdp, enInt, carbInt):
     value_check(enInt)
     value_check(carbInt)
     co2 = pop * gdp * enInt * carbInt
-    return co2
+    """check what is the output type"""
+    if output_type == "CO2":
+        return co2
+    elif output_type == "C":
+        return co2 / 3.67
+    else:
+        raise ValueError("Sorry, only options for CO2 or C")

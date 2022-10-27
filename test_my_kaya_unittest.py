@@ -11,6 +11,8 @@ class TestMykaya(unittest.TestCase):
             2, 2, 3, 4), 48, "Should be 48")
         self.assertEqual(my_kaya_equation(
             3, 2, 3, 4), 72, "Should be 72")
+        self.assertEqual(my_kaya_equation(
+            3, 2, 3, 4, "C"), 72, "Should be 72")
 
     def test__value(self):
         self.assertRaises(ValueError, my_kaya_equation, -1, 2, 3, 4)
