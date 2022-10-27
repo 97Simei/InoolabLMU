@@ -1,3 +1,6 @@
+def value_check(value):
+  if value < 0:
+    raise Exception("Sorry, no numbers below zero")
 def my_kaya_equation(pop,gdp,enInt,carbInt):
   """
   Input Example for my_kaya_equation
@@ -6,6 +9,7 @@ def my_kaya_equation(pop,gdp,enInt,carbInt):
   • enInt (in GJ/$1000GDP): 5
   • carbInt (in tonnes CO2/GJ): 0.05
   """
+ 
   co2 = pop * gdp * enInt * carbInt
   return co2
 
