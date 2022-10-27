@@ -5,5 +5,5 @@ setup(name='mykaya',
       description='The first assignment for the LMU InnoLab',
       url='https://github.com/97Simei/InoolabLMU',
       author='Simei Li',
-      packages=['mykaya','uniTest'],
+      packages=['mykaya'],
       zip_safe=False)
