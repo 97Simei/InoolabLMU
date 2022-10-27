@@ -12,7 +12,7 @@ class TestMykaya(unittest.TestCase):
         self.assertEqual(my_kaya_equation(
             3, 2, 3, 4), 72, "Should be 72")
         self.assertEqual(my_kaya_equation(
-            3, 2, 3, 4, "C"), 72, "Should be 72")
+            3, 2, 3, 4, "C"), 19.618528610354225, "Should be 72")
 
     def test__value(self):
         self.assertRaises(ValueError, my_kaya_equation, -1, 2, 3, 4)
