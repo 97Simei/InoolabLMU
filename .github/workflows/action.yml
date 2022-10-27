@@ -1,7 +1,7 @@
 # action.yaml
 name: 'Custom GitHub Action'
 description: 'A GitHub Action for Innolab as1'
-on [push]
+on: [push]
 runs:
   using: 'composite'
   steps:
